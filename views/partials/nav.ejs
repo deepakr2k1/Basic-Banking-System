@@ -1,0 +1,11 @@
+<div id="top">
+    <h1>MONEY TRANSFER</h1>
+    <div>
+        <% if(user.email == null || user.email == "") { %>
+            <a href="/user"><button  id="log">Login</button></a>
+            <% } else { %>
+                <span> Welcome,&ensp;<%= user.name %> </span>
+                <a href="/logout"><button  id="log">Logout</button></a>
+                <% } %>
+    </div>
+</div>
